@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/search.css">
+  <title>Бронирование отелей</title>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      Hotel
+    </div>
+    <div class="header__sign-in">
+      <div class="header__sign-in-button">
+        <img src="./img/logo.svg" alt="" class="header__sign-in-logo">
+        <p class="header__sign-in-text">
+          Войти
+        </p>
+        <img src="./img/arrow.svg" alt="" class="header__sign-in-arrow">
+      </div>
+      <section class="header__sign-in-links">
+        <a href="#" class="header__sign-in-sign-in">Войти</a>
+        <a href="#" class="header__sign-in-sign-up">Зарегистрироватся</a>
+      </section>
+    </div>
+  </header>
+
+  <div class="wrapper">
+    <aside class="aside">
+      <form action="get" class="aside__form">
+        <div class="aside__dates">
+          <p class="aside__dates-head">Даты пребывания в отеле</p>
+          <input class="aside__dates-input" type="text" placeholder="ДД.ММ - ДД.ММ">
+        </div>
+        <div class="aside__guest">
+          <p class="aside__guest-head">Гости</p>
+          <input class="aside__guest-input" type="text" placeholder="Сколько гостей">
+        </div>
+        <div class="aside__count">
+          <p class="aside__count-head">Диапазон цены</p>
+          <span class="aside__count-inputs">
+            <input class="aside__count-input" type="text" placeholder="0">
+            -
+            <input class="aside__count-input" type="text" placeholder="10 000">
+          </span>
+        </div>
+      </form>
+    </aside>
+
+    <div class="global">
+      <h2 class="global__head-text">
+        Номера которые мы подобрали
+      </h2>
+      <ul class="global__card-list">
+        <li class="global__card">
+          <div class="card">
+            <div class="swiper card__slider js-card__slider">
+              <div class="swiper-wrapper card__slider-wrapper js-card__slider-wrapper"><a class="swiper-slide" href="#"><img class="card__img" src="#"/></a><a class="swiper-slide" href="#"><img class="card__img" src="#"/></a><a class="swiper-slide" href="#"><img class="card__img" src="#"/></a><a class="swiper-slide" href="#"><img class="card__img" src="#"/></a></div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <div class="card__info">
+              <div class="card__headed">
+                <div class="card__headed-room"> 
+                  <div>№</div>
+                  <h1>888</h1>
+                  <h3>Люкс</h3>
+                </div>
+                <div class="card__headed-cost">
+                  <div>9 990₽</div>
+                  <div>в сутки</div>
+                </div>
+              </div>
+              <div class="card__line"></div>
+              <div class="card__footer">
+                <input class="rate-button__input" type="radio" id="star-1-h1" name="rating-h1" value="1"/>
+                <label class="rate-button__label" for="star-1-h1" title="Оценка «1»"></label>
+                <input class="rate-button__input" type="radio" id="star-2-h2" name="rating-h1" value="2"/>
+                <label class="rate-button__label" for="star-2-h2" title="Оценка «2»"></label>
+                <input class="rate-button__input" type="radio" id="star-3-h3" name="rating-h1" value="3"/>
+                <label class="rate-button__label" for="star-3-h3" title="Оценка «3»"></label>
+                <input class="rate-button__input" type="radio" id="star-4-h4" name="rating-h1" value="4"/>
+                <label class="rate-button__label" for="star-4-h4" title="Оценка «4»"></label>
+                <input class="rate-button__input" type="radio" id="star-5-h5" name="rating-h1" value="5"/>
+                <label class="rate-button__label" for="star-5-h5" title="Оценка «5»"></label>
+                <div class="card__reviews">
+                  <div>145</div>
+                  <div>Отзывов</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="global__card">
+          <div class="card">
+            <div class="swiper card__slider js-card__slider">
+              <div class="swiper-wrapper card__slider-wrapper js-card__slider-wrapper"><a class="swiper-slide" href="#"><img class="card__img" src="#"/></a><a class="swiper-slide" href="#"><img class="card__img" src="#"/></a><a class="swiper-slide" href="#"><img class="card__img" src="#"/></a><a class="swiper-slide" href="#"><img class="card__img" src="#"/></a></div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <div class="card__info">
+              <div class="card__headed">
+                <div class="card__headed-room"> 
+                  <div>№</div>
+                  <h1>888</h1>
+                  <h3>Люкс</h3>
+                </div>
+                <div class="card__headed-cost">
+                  <div>9 990₽</div>
+                  <div>в сутки</div>
+                </div>
+              </div>
+              <div class="card__line"></div>
+              <div class="card__footer">
+                <input class="rate-button__input" type="radio" id="star-1-h1" name="rating-h1" value="1"/>
+                <label class="rate-button__label" for="star-1-h1" title="Оценка «1»"></label>
+                <input class="rate-button__input" type="radio" id="star-2-h2" name="rating-h1" value="2"/>
+                <label class="rate-button__label" for="star-2-h2" title="Оценка «2»"></label>
+                <input class="rate-button__input" type="radio" id="star-3-h3" name="rating-h1" value="3"/>
+                <label class="rate-button__label" for="star-3-h3" title="Оценка «3»"></label>
+                <input class="rate-button__input" type="radio" id="star-4-h4" name="rating-h1" value="4"/>
+                <label class="rate-button__label" for="star-4-h4" title="Оценка «4»"></label>
+                <input class="rate-button__input" type="radio" id="star-5-h5" name="rating-h1" value="5"/>
+                <label class="rate-button__label" for="star-5-h5" title="Оценка «5»"></label>
+                <div class="card__reviews">
+                  <div>145</div>
+                  <div>Отзывов</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="global__card">
+          <div class="card">
+            <div class="swiper card__slider js-card__slider">
+              <div class="swiper-wrapper card__slider-wrapper js-card__slider-wrapper"><a class="swiper-slide" href="#"><img class="card__img" src="#"/></a><a class="swiper-slide" href="#"><img class="card__img" src="#"/></a><a class="swiper-slide" href="#"><img class="card__img" src="#"/></a><a class="swiper-slide" href="#"><img class="card__img" src="#"/></a></div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <div class="card__info">
+              <div class="card__headed">
+                <div class="card__headed-room"> 
+                  <div>№</div>
+                  <h1>888</h1>
+                  <h3>Люкс</h3>
+                </div>
+                <div class="card__headed-cost">
+                  <div>9 990₽</div>
+                  <div>в сутки</div>
+                </div>
+              </div>
+              <div class="card__line"></div>
+              <div class="card__footer">
+                <input class="rate-button__input" type="radio" id="star-1-h1" name="rating-h1" value="1"/>
+                <label class="rate-button__label" for="star-1-h1" title="Оценка «1»"></label>
+                <input class="rate-button__input" type="radio" id="star-2-h2" name="rating-h1" value="2"/>
+                <label class="rate-button__label" for="star-2-h2" title="Оценка «2»"></label>
+                <input class="rate-button__input" type="radio" id="star-3-h3" name="rating-h1" value="3"/>
+                <label class="rate-button__label" for="star-3-h3" title="Оценка «3»"></label>
+                <input class="rate-button__input" type="radio" id="star-4-h4" name="rating-h1" value="4"/>
+                <label class="rate-button__label" for="star-4-h4" title="Оценка «4»"></label>
+                <input class="rate-button__input" type="radio" id="star-5-h5" name="rating-h1" value="5"/>
+                <label class="rate-button__label" for="star-5-h5" title="Оценка «5»"></label>
+                <div class="card__reviews">
+                  <div>145</div>
+                  <div>Отзывов</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="global__card">
+          <div class="card">
+            <div class="swiper card__slider js-card__slider">
+              <div class="swiper-wrapper card__slider-wrapper js-card__slider-wrapper"><a class="swiper-slide" href="#"><img class="card__img" src="#"/></a><a class="swiper-slide" href="#"><img class="card__img" src="#"/></a><a class="swiper-slide" href="#"><img class="card__img" src="#"/></a><a class="swiper-slide" href="#"><img class="card__img" src="#"/></a></div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <div class="card__info">
+              <div class="card__headed">
+                <div class="card__headed-room"> 
+                  <div>№</div>
+                  <h1>888</h1>
+                  <h3>Люкс</h3>
+                </div>
+                <div class="card__headed-cost">
+                  <div>9 990₽</div>
+                  <div>в сутки</div>
+                </div>
+              </div>
+              <div class="card__line"></div>
+              <div class="card__footer">
+                <input class="rate-button__input" type="radio" id="star-1-h1" name="rating-h1" value="1"/>
+                <label class="rate-button__label" for="star-1-h1" title="Оценка «1»"></label>
+                <input class="rate-button__input" type="radio" id="star-2-h2" name="rating-h1" value="2"/>
+                <label class="rate-button__label" for="star-2-h2" title="Оценка «2»"></label>
+                <input class="rate-button__input" type="radio" id="star-3-h3" name="rating-h1" value="3"/>
+                <label class="rate-button__label" for="star-3-h3" title="Оценка «3»"></label>
+                <input class="rate-button__input" type="radio" id="star-4-h4" name="rating-h1" value="4"/>
+                <label class="rate-button__label" for="star-4-h4" title="Оценка «4»"></label>
+                <input class="rate-button__input" type="radio" id="star-5-h5" name="rating-h1" value="5"/>
+                <label class="rate-button__label" for="star-5-h5" title="Оценка «5»"></label>
+                <div class="card__reviews">
+                  <div>145</div>
+                  <div>Отзывов</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="global__card">
+          <div class="card">
+            <div class="swiper card__slider js-card__slider">
+              <div class="swiper-wrapper card__slider-wrapper js-card__slider-wrapper"><a class="swiper-slide" href="#"><img class="card__img" src="#"/></a><a class="swiper-slide" href="#"><img class="card__img" src="#"/></a><a class="swiper-slide" href="#"><img class="card__img" src="#"/></a><a class="swiper-slide" href="#"><img class="card__img" src="#"/></a></div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <div class="card__info">
+              <div class="card__headed">
+                <div class="card__headed-room"> 
+                  <div>№</div>
+                  <h1>888</h1>
+                  <h3>Люкс</h3>
+                </div>
+                <div class="card__headed-cost">
+                  <div>9 990₽</div>
+                  <div>в сутки</div>
+                </div>
+              </div>
+              <div class="card__line"></div>
+              <div class="card__footer">
+                <input class="rate-button__input" type="radio" id="star-1-h1" name="rating-h1" value="1"/>
+                <label class="rate-button__label" for="star-1-h1" title="Оценка «1»"></label>
+                <input class="rate-button__input" type="radio" id="star-2-h2" name="rating-h1" value="2"/>
+                <label class="rate-button__label" for="star-2-h2" title="Оценка «2»"></label>
+                <input class="rate-button__input" type="radio" id="star-3-h3" name="rating-h1" value="3"/>
+                <label class="rate-button__label" for="star-3-h3" title="Оценка «3»"></label>
+                <input class="rate-button__input" type="radio" id="star-4-h4" name="rating-h1" value="4"/>
+                <label class="rate-button__label" for="star-4-h4" title="Оценка «4»"></label>
+                <input class="rate-button__input" type="radio" id="star-5-h5" name="rating-h1" value="5"/>
+                <label class="rate-button__label" for="star-5-h5" title="Оценка «5»"></label>
+                <div class="card__reviews">
+                  <div>145</div>
+                  <div>Отзывов</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="global__card">
+          <div class="card">
+            <div class="swiper card__slider js-card__slider">
+              <div class="swiper-wrapper card__slider-wrapper js-card__slider-wrapper"><a class="swiper-slide" href="#"><img class="card__img" src="#"/></a><a class="swiper-slide" href="#"><img class="card__img" src="#"/></a><a class="swiper-slide" href="#"><img class="card__img" src="#"/></a><a class="swiper-slide" href="#"><img class="card__img" src="#"/></a></div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <div class="card__info">
+              <div class="card__headed">
+                <div class="card__headed-room"> 
+                  <div>№</div>
+                  <h1>888</h1>
+                  <h3>Люкс</h3>
+                </div>
+                <div class="card__headed-cost">
+                  <div>9 990₽</div>
+                  <div>в сутки</div>
+                </div>
+              </div>
+              <div class="card__line"></div>
+              <div class="card__footer">
+                <input class="rate-button__input" type="radio" id="star-1-h1" name="rating-h1" value="1"/>
+                <label class="rate-button__label" for="star-1-h1" title="Оценка «1»"></label>
+                <input class="rate-button__input" type="radio" id="star-2-h2" name="rating-h1" value="2"/>
+                <label class="rate-button__label" for="star-2-h2" title="Оценка «2»"></label>
+                <input class="rate-button__input" type="radio" id="star-3-h3" name="rating-h1" value="3"/>
+                <label class="rate-button__label" for="star-3-h3" title="Оценка «3»"></label>
+                <input class="rate-button__input" type="radio" id="star-4-h4" name="rating-h1" value="4"/>
+                <label class="rate-button__label" for="star-4-h4" title="Оценка «4»"></label>
+                <input class="rate-button__input" type="radio" id="star-5-h5" name="rating-h1" value="5"/>
+                <label class="rate-button__label" for="star-5-h5" title="Оценка «5»"></label>
+                <div class="card__reviews">
+                  <div>145</div>
+                  <div>Отзывов</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="global__card">
+          <div class="card">
+            <div class="swiper card__slider js-card__slider">
+              <div class="swiper-wrapper card__slider-wrapper js-card__slider-wrapper"><a class="swiper-slide" href="#"><img class="card__img" src="#"/></a><a class="swiper-slide" href="#"><img class="card__img" src="#"/></a><a class="swiper-slide" href="#"><img class="card__img" src="#"/></a><a class="swiper-slide" href="#"><img class="card__img" src="#"/></a></div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <div class="card__info">
+              <div class="card__headed">
+                <div class="card__headed-room"> 
+                  <div>№</div>
+                  <h1>888</h1>
+                  <h3>Люкс</h3>
+                </div>
+                <div class="card__headed-cost">
+                  <div>9 990₽</div>
+                  <div>в сутки</div>
+                </div>
+              </div>
+              <div class="card__line"></div>
+              <div class="card__footer">
+                <input class="rate-button__input" type="radio" id="star-1-h1" name="rating-h1" value="1"/>
+                <label class="rate-button__label" for="star-1-h1" title="Оценка «1»"></label>
+                <input class="rate-button__input" type="radio" id="star-2-h2" name="rating-h1" value="2"/>
+                <label class="rate-button__label" for="star-2-h2" title="Оценка «2»"></label>
+                <input class="rate-button__input" type="radio" id="star-3-h3" name="rating-h1" value="3"/>
+                <label class="rate-button__label" for="star-3-h3" title="Оценка «3»"></label>
+                <input class="rate-button__input" type="radio" id="star-4-h4" name="rating-h1" value="4"/>
+                <label class="rate-button__label" for="star-4-h4" title="Оценка «4»"></label>
+                <input class="rate-button__input" type="radio" id="star-5-h5" name="rating-h1" value="5"/>
+                <label class="rate-button__label" for="star-5-h5" title="Оценка «5»"></label>
+                <div class="card__reviews">
+                  <div>145</div>
+                  <div>Отзывов</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="global__card">
+          <div class="card">
+            <div class="swiper card__slider js-card__slider">
+              <div class="swiper-wrapper card__slider-wrapper js-card__slider-wrapper"><a class="swiper-slide" href="#"><img class="card__img" src="#"/></a><a class="swiper-slide" href="#"><img class="card__img" src="#"/></a><a class="swiper-slide" href="#"><img class="card__img" src="#"/></a><a class="swiper-slide" href="#"><img class="card__img" src="#"/></a></div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <div class="card__info">
+              <div class="card__headed">
+                <div class="card__headed-room"> 
+                  <div>№</div>
+                  <h1>888</h1>
+                  <h3>Люкс</h3>
+                </div>
+                <div class="card__headed-cost">
+                  <div>9 990₽</div>
+                  <div>в сутки</div>
+                </div>
+              </div>
+              <div class="card__line"></div>
+              <div class="card__footer">
+                <input class="rate-button__input" type="radio" id="star-1-h1" name="rating-h1" value="1"/>
+                <label class="rate-button__label" for="star-1-h1" title="Оценка «1»"></label>
+                <input class="rate-button__input" type="radio" id="star-2-h2" name="rating-h1" value="2"/>
+                <label class="rate-button__label" for="star-2-h2" title="Оценка «2»"></label>
+                <input class="rate-button__input" type="radio" id="star-3-h3" name="rating-h1" value="3"/>
+                <label class="rate-button__label" for="star-3-h3" title="Оценка «3»"></label>
+                <input class="rate-button__input" type="radio" id="star-4-h4" name="rating-h1" value="4"/>
+                <label class="rate-button__label" for="star-4-h4" title="Оценка «4»"></label>
+                <input class="rate-button__input" type="radio" id="star-5-h5" name="rating-h1" value="5"/>
+                <label class="rate-button__label" for="star-5-h5" title="Оценка «5»"></label>
+                <div class="card__reviews">
+                  <div>145</div>
+                  <div>Отзывов</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="global__card">
+          <div class="card">
+            <div class="swiper card__slider js-card__slider">
+              <div class="swiper-wrapper card__slider-wrapper js-card__slider-wrapper"><a class="swiper-slide" href="#"><img class="card__img" src="#"/></a><a class="swiper-slide" href="#"><img class="card__img" src="#"/></a><a class="swiper-slide" href="#"><img class="card__img" src="#"/></a><a class="swiper-slide" href="#"><img class="card__img" src="#"/></a></div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <div class="card__info">
+              <div class="card__headed">
+                <div class="card__headed-room"> 
+                  <div>№</div>
+                  <h1>888</h1>
+                  <h3>Люкс</h3>
+                </div>
+                <div class="card__headed-cost">
+                  <div>9 990₽</div>
+                  <div>в сутки</div>
+                </div>
+              </div>
+              <div class="card__line"></div>
+              <div class="card__footer">
+                <input class="rate-button__input" type="radio" id="star-1-h1" name="rating-h1" value="1"/>
+                <label class="rate-button__label" for="star-1-h1" title="Оценка «1»"></label>
+                <input class="rate-button__input" type="radio" id="star-2-h2" name="rating-h1" value="2"/>
+                <label class="rate-button__label" for="star-2-h2" title="Оценка «2»"></label>
+                <input class="rate-button__input" type="radio" id="star-3-h3" name="rating-h1" value="3"/>
+                <label class="rate-button__label" for="star-3-h3" title="Оценка «3»"></label>
+                <input class="rate-button__input" type="radio" id="star-4-h4" name="rating-h1" value="4"/>
+                <label class="rate-button__label" for="star-4-h4" title="Оценка «4»"></label>
+                <input class="rate-button__input" type="radio" id="star-5-h5" name="rating-h1" value="5"/>
+                <label class="rate-button__label" for="star-5-h5" title="Оценка «5»"></label>
+                <div class="card__reviews">
+                  <div>145</div>
+                  <div>Отзывов</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="global__card">
+          <div class="card">
+            <div class="swiper card__slider js-card__slider">
+              <div class="swiper-wrapper card__slider-wrapper js-card__slider-wrapper"><a class="swiper-slide" href="#"><img class="card__img" src="#"/></a><a class="swiper-slide" href="#"><img class="card__img" src="#"/></a><a class="swiper-slide" href="#"><img class="card__img" src="#"/></a><a class="swiper-slide" href="#"><img class="card__img" src="#"/></a></div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <div class="card__info">
+              <div class="card__headed">
+                <div class="card__headed-room"> 
+                  <div>№</div>
+                  <h1>888</h1>
+                  <h3>Люкс</h3>
+                </div>
+                <div class="card__headed-cost">
+                  <div>9 990₽</div>
+                  <div>в сутки</div>
+                </div>
+              </div>
+              <div class="card__line"></div>
+              <div class="card__footer">
+                <input class="rate-button__input" type="radio" id="star-1-h1" name="rating-h1" value="1"/>
+                <label class="rate-button__label" for="star-1-h1" title="Оценка «1»"></label>
+                <input class="rate-button__input" type="radio" id="star-2-h2" name="rating-h1" value="2"/>
+                <label class="rate-button__label" for="star-2-h2" title="Оценка «2»"></label>
+                <input class="rate-button__input" type="radio" id="star-3-h3" name="rating-h1" value="3"/>
+                <label class="rate-button__label" for="star-3-h3" title="Оценка «3»"></label>
+                <input class="rate-button__input" type="radio" id="star-4-h4" name="rating-h1" value="4"/>
+                <label class="rate-button__label" for="star-4-h4" title="Оценка «4»"></label>
+                <input class="rate-button__input" type="radio" id="star-5-h5" name="rating-h1" value="5"/>
+                <label class="rate-button__label" for="star-5-h5" title="Оценка «5»"></label>
+                <div class="card__reviews">
+                  <div>145</div>
+                  <div>Отзывов</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="global__card">
+          <div class="card">
+            <div class="swiper card__slider js-card__slider">
+              <div class="swiper-wrapper card__slider-wrapper js-card__slider-wrapper"><a class="swiper-slide" href="#"><img class="card__img" src="#"/></a><a class="swiper-slide" href="#"><img class="card__img" src="#"/></a><a class="swiper-slide" href="#"><img class="card__img" src="#"/></a><a class="swiper-slide" href="#"><img class="card__img" src="#"/></a></div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <div class="card__info">
+              <div class="card__headed">
+                <div class="card__headed-room"> 
+                  <div>№</div>
+                  <h1>888</h1>
+                  <h3>Люкс</h3>
+                </div>
+                <div class="card__headed-cost">
+                  <div>9 990₽</div>
+                  <div>в сутки</div>
+                </div>
+              </div>
+              <div class="card__line"></div>
+              <div class="card__footer">
+                <input class="rate-button__input" type="radio" id="star-1-h1" name="rating-h1" value="1"/>
+                <label class="rate-button__label" for="star-1-h1" title="Оценка «1»"></label>
+                <input class="rate-button__input" type="radio" id="star-2-h2" name="rating-h1" value="2"/>
+                <label class="rate-button__label" for="star-2-h2" title="Оценка «2»"></label>
+                <input class="rate-button__input" type="radio" id="star-3-h3" name="rating-h1" value="3"/>
+                <label class="rate-button__label" for="star-3-h3" title="Оценка «3»"></label>
+                <input class="rate-button__input" type="radio" id="star-4-h4" name="rating-h1" value="4"/>
+                <label class="rate-button__label" for="star-4-h4" title="Оценка «4»"></label>
+                <input class="rate-button__input" type="radio" id="star-5-h5" name="rating-h1" value="5"/>
+                <label class="rate-button__label" for="star-5-h5" title="Оценка «5»"></label>
+                <div class="card__reviews">
+                  <div>145</div>
+                  <div>Отзывов</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="global__card">
+          <div class="card">
+            <div class="swiper card__slider js-card__slider">
+              <div class="swiper-wrapper card__slider-wrapper js-card__slider-wrapper"><a class="swiper-slide" href="#"><img class="card__img" src="#"/></a><a class="swiper-slide" href="#"><img class="card__img" src="#"/></a><a class="swiper-slide" href="#"><img class="card__img" src="#"/></a><a class="swiper-slide" href="#"><img class="card__img" src="#"/></a></div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <div class="card__info">
+              <div class="card__headed">
+                <div class="card__headed-room"> 
+                  <div>№</div>
+                  <h1>888</h1>
+                  <h3>Люкс</h3>
+                </div>
+                <div class="card__headed-cost">
+                  <div>9 990₽</div>
+                  <div>в сутки</div>
+                </div>
+              </div>
+              <div class="card__line"></div>
+              <div class="card__footer">
+                <input class="rate-button__input" type="radio" id="star-1-h1" name="rating-h1" value="1"/>
+                <label class="rate-button__label" for="star-1-h1" title="Оценка «1»"></label>
+                <input class="rate-button__input" type="radio" id="star-2-h2" name="rating-h1" value="2"/>
+                <label class="rate-button__label" for="star-2-h2" title="Оценка «2»"></label>
+                <input class="rate-button__input" type="radio" id="star-3-h3" name="rating-h1" value="3"/>
+                <label class="rate-button__label" for="star-3-h3" title="Оценка «3»"></label>
+                <input class="rate-button__input" type="radio" id="star-4-h4" name="rating-h1" value="4"/>
+                <label class="rate-button__label" for="star-4-h4" title="Оценка «4»"></label>
+                <input class="rate-button__input" type="radio" id="star-5-h5" name="rating-h1" value="5"/>
+                <label class="rate-button__label" for="star-5-h5" title="Оценка «5»"></label>
+                <div class="card__reviews">
+                  <div>145</div>
+                  <div>Отзывов</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul class="global__navigation">
+        <li class="global__navigation-element global__navigation-element--deactive global__navigation-element--goto">
+          <a href="#" class="global__navigation-link"><-</a>
+        </li>
+        <li class="global__navigation-element global__navigation-element--active">
+          <a href="#" class="global__navigation-link">1</a>
+        </li>
+        <li class="global__navigation-element">
+          <a href="#" class="global__navigation-link">2</a>
+        </li>
+        <li class="global__navigation-element">
+          <a href="#" class="global__navigation-link">3</a>
+        </li>
+        <li class="global__navigation-element">
+          <p></p>
+          ...
+        </li>
+        <li class="global__navigation-element">
+          <a href="#" class="global__navigation-link">15</a>
+        </li>
+        <li class="global__navigation-element global__navigation-element--goto">
+          <a href="#" class="global__navigation-element global__navigation-link">-></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer__copyrigth">2023 WhoStoleMySleep ©</div>
+    <div class="footer__social"></div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/global.css">
+  <title>Бронирование отелей</title>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      Hotel
+    </div>
+    <div class="header__sign-in">
+      <div class="header__sign-in-button">
+        <img src="./img/logo.svg" alt="" class="header__sign-in-logo">
+        <p class="header__sign-in-text">
+          Войти
+        </p>
+        <img src="./img/arrow.svg" alt="" class="header__sign-in-arrow">
+      </div>
+      <section class="header__sign-in-links">
+        <a href="#" class="header__sign-in-sign-in">Войти</a>
+        <a href="#" class="header__sign-in-sign-up">Зарегистрироватся</a>
+      </section>
+    </div>
+  </header>
+
+  <div class="wrapper">
+    <section class="search-table">
+      <h2>Найдём номера под ваши пожелания</h2>
+      <form action="" method="get">
+        <div class="search-table__date">
+          <div class="search-table__arrival">
+            <p>Прибытие</p>
+            <input type="text" placeholder="ДД.ММ.ГГГГ">
+          </div>
+          <div class="search-table__departure">
+            <p>Выезд</p>
+            <input type="text" placeholder="ДД.ММ.ГГГГ">
+          </div>
+        </div>
+        <div class="search-table__guest">
+          <p>Гости</p>
+          <input type="text" placeholder="Сколько гостей">
+        </div>
+        <button type="submit">Найти</button>
+      </form>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <div class="footer__copyrigth">2023 WhoStoleMySleep ©</div>
+    <div class="footer__social"></div>
+  </footer>
+</body>
+</html>
