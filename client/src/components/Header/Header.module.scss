@@ -1,0 +1,86 @@
+.header {
+  width: 100vw;
+  height: 48px;
+  position: fixed;
+  background-color: #fff;
+  display: flex;
+  top: 0;
+
+  .logo {
+    margin-top: 7px;
+    margin-left: 50px;
+    font-size: 26px;
+    color: #0F5DE4;
+    font-family: Segoe UI;
+    font-weight: bold;
+  }
+
+  &__sign-in {
+    position: absolute;
+    right: 50px;
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+
+    &:hover &-links {
+      display: flex;
+    }
+
+    &-button {
+      width: 96px;
+      height: 24px;
+      display: flex;
+      font-size: 16px;
+      color: #0F5DE4;
+      position: absolute;
+      right: 0;
+      cursor: pointer;
+    }
+
+    &-logo {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+      font-family: Segoe UI;
+      font-weight: Semibold;
+    }
+
+    &-text {
+      display: flex;
+      color: #0f5de4;
+      font-weight: 600;
+
+      &::after {
+        color: rgba(31, 32, 65, 0.5);
+        content: "expand_more";
+        font-family: "Material Icons";
+        font-size: 24px;
+        height: 16px;
+        width: 16px;
+        color: #0F5DE4;
+      }
+    }
+
+    &-links {
+      width: 130px;
+      height: 41px;
+      display: none;
+      flex-direction: column;
+      text-align: right;
+      font-size: 14px;
+      margin-top: 31px;
+      background-color: #fff;
+      border: 1px solid rgba(112, 112, 112, 0.1);
+      border-radius: 2px;
+      padding-right: 5px;
+      width: 140px;
+      font-weight: 600;
+
+      a {
+        text-decoration: none;
+        font-family: Segoe UI;
+        color: #0F5DE4;
+      }
+    }
+  }
+}
