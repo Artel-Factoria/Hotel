@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import './index.css';
+import { BrowserRouter } from 'react-router-dom';
 import LandingPage from './pages/LandingPage/LandingPage';
 import reportWebVitals from './reportWebVitals';
 
@@ -11,9 +12,10 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <Header />
-    <LandingPage />
-    <Footer />
+    <BrowserRouter>
+      <Header />
+      <Footer />
+    </BrowserRouter>
   </React.StrictMode>
 );
 
