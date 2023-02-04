@@ -1,0 +1,17 @@
+.room-preview {
+	display: flex;
+}
+
+.room-preview .room-preview__big {
+	width: 1281px;
+}
+
+.content__bagel {
+	width: 123px;
+}
+
+.content__column .content__reviews .content__reviews-head {
+	width: fit-content;
+	display: flex;
+	text-align: center;
+}

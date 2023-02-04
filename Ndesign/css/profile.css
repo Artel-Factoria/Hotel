@@ -1,0 +1,53 @@
+/* wrapper */
+
+.wrapper {
+  padding: 0px 18px;
+  margin-top: 140px;
+  display: flex;
+}
+
+.wrapper .left-window {
+  width: 215px;
+  height: 137px;
+  border: 1px solid rgb(112, 112, 112, 0.3);
+  border-radius: 4px;
+  margin-right: 60px;
+}
+
+.wrapper .left-window .left-window__main-data {
+  width: 100%;
+  height: 50px;
+  padding: 5px 0 0 15px;
+  font-size: 18px;
+  border-bottom: 1px solid rgb(112, 112, 112, 0.3);
+}
+
+.wrapper .left-window .left-window__links {
+  padding-left: 15px;
+}
+
+.wrapper .left-window .left-window__links .left-window__personal-orders,
+.wrapper .left-window .left-window__links .left-window__contact {
+  margin-top: 10px;
+  display: block;
+  color: #0073ff;
+  font-size: 18px;
+}
+
+.global-main-data .global-main-data__head-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #070707;
+  margin-bottom: 20px;
+}
+
+.global-main-data .global-main-data__name {
+  color: #070707;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.global-main-data .global-main-data__edit-data {
+  color: #0073FF;
+  font-size: 12px;
+}
